@@ -1,0 +1,43 @@
+import { SITE_ASSETS } from "@/config/site-assets";
+
+export const properties = [
+  {
+    id: 1,
+    title: "Contemporary Family Residence",
+    location: "DHA, Karachi",
+    price: "PKR 4.5 Crore",
+    purpose: "For Sale",
+    type: "House",
+    beds: 4,
+    baths: 5,
+    area: "500 sq. yd.",
+    image: SITE_ASSETS.sale,
+    slug: "contemporary-family-residence",
+  },
+  {
+    id: 2,
+    title: "Modern Urban Apartment",
+    location: "Clifton, Karachi",
+    price: "PKR 180,000 / month",
+    purpose: "For Rent",
+    type: "Apartment",
+    beds: 3,
+    baths: 3,
+    area: "2,000 sq. ft.",
+    image: SITE_ASSETS.rental,
+    slug: "modern-urban-apartment",
+  },
+  {
+    id: 3,
+    title: "Luxury Modern Villa",
+    location: "Bahria Town, Karachi",
+    price: "PKR 6.2 Crore",
+    purpose: "For Sale",
+    type: "Villa",
+    beds: 5,
+    baths: 6,
+    area: "500 sq. yd.",
+    image: SITE_ASSETS.sale,
+    slug: "luxury-modern-villa",
+  },
+];

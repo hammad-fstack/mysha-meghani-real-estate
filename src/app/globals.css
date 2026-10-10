@@ -1,26 +1,76 @@
+
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --color-navy: #102c46;
+  --color-teal: #079a9a;
+  --color-gold: #c99a32;
+  --color-background: #f8f7f3;
+  --color-surface: #ffffff;
+  --color-muted: #667788;
+  --color-border: #e4e7e8;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+* {
+  box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+html {
+  scroll-behavior: smooth;
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
+  margin: 0;
+  background: var(--color-background);
+  color: var(--color-navy);
   font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button,
+input,
+select {
+  font: inherit;
+}
+
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+button {
+  cursor: pointer;
+}
+
+img {
+  max-width: 100%;
+}
+
+::selection {
+  background: var(--color-teal);
+  color: white;
+}
+
+.container-width {
+  width: min(1200px, calc(100% - 48px));
+  margin-inline: auto;
+}
+
+.section-padding {
+  padding-block: 80px;
+}
+
+@media (max-width: 640px) {
+  .container-width {
+    width: calc(100% - 32px);
+  }
+
+  .section-padding {
+    padding-block: 52px;
+  }
 }
